@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'conference',
+    title: 'V CACSMGE',
     htmlAttrs: {
       lang: 'en'
     },
@@ -36,9 +36,80 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    '@nuxtjs/i18n',
+    
   ],
-
+  i18n: {
+    /* module options */
+    locales: [
+    {
+      code: 'en',
+      name: 'EN'
+    },
+    {
+      code: 'ru',
+      name: 'RU'
+    },
+    {
+      code: 'uz',
+      name: 'UZ'
+    }
+  ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          headerLinks: {
+            main: 'Main',
+            about: 'About the Conference',
+            venue: 'Venue',
+            hotels: 'Hotels',
+            gallery: 'Photo gallery',
+            month: 'October',
+            register: 'Register'
+          },
+          languages: {
+            ru: 'RU',
+            en: 'EN',
+            uz: 'UZ',
+          }
+        },
+        ru: {
+          headerLinks: {
+            main: 'Главная',
+            about: 'О конференции',
+            venue: 'Место проведение',
+            hotels: 'Гостиницы',
+            gallery: 'Фотогалерея',
+            month: 'Октября',
+            register: 'Зарегистрироваться'
+          },
+          languages: {
+            ru: 'RU',
+            en: 'EN',
+            uz: 'UZ',
+          }
+        },
+        uz: {
+          headerLinks: {
+            main: 'Uy',
+            about: 'Biz haqimizda',
+            venue: 'Konferensiya',
+            hotels: 'Hotels',
+            gallery: 'Photo gallery',
+            month: 'October',
+            register: 'Register'
+          },
+          languages: {
+            ru: 'RU',
+            en: 'EN',
+            uz: 'UZ',
+          }
+        }
+      }
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
