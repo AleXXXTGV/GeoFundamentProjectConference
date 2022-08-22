@@ -69,11 +69,14 @@ export default {
             month: 'October',
             register: 'Register'
           },
-          languages: {
-            ru: 'RU',
-            en: 'EN',
-            uz: 'UZ',
-          }
+          indexPage: {
+            logo: 'CENTRAL ASIAN CONFERENCE ON SOIL MECHANICS AND GEOTECHNICAL ENGINEERING',
+            city: 'Samarkand, Uzbekistan',
+            importantDates: 'Important dates',
+            importantDateOne: 'Acceptance of abstracts (abstracts) until August 25, 2022.',
+            importantDateTwo: 'Submission of the article until September 15, 2022.',
+            importantDateThree: 'Registration for the conference until September 25, 2022.',
+          },
         },
         ru: {
           headerLinks: {
@@ -85,11 +88,14 @@ export default {
             month: 'Октября',
             register: 'Зарегистрироваться'
           },
-          languages: {
-            ru: 'RU',
-            en: 'EN',
-            uz: 'UZ',
-          }
+          indexPage: {
+            logo: 'ЦЕНТРАЛЬНО-АЗИАТСКАЯ КОНФЕРЕНЦИЯ ПО МЕХАНИКЕ ГРУНТОВ И ГЕОТОЕХНИКЕ',
+            city: 'Самарканд, Узбекистан',
+            importantDates: 'Основные даты',
+            importantDateOne: '25 авгута - окончание приема тезисов (абстрактов).',
+            importantDateTwo: '15 сентября  - окончание приема статей.',
+            importantDateThree: '20 сентября  - окончание регистрации на конференцию .',
+          },
         },
         uz: {
           headerLinks: {
@@ -101,11 +107,14 @@ export default {
             month: 'October',
             register: 'Register'
           },
-          languages: {
-            ru: 'RU',
-            en: 'EN',
-            uz: 'UZ',
-          }
+          indexPage: {
+            logo: 'CENTRAL ASIAN CONFERENCE ON SOIL MECHANICS AND GEOTECHNICAL ENGINEERING',
+            city: 'Samarkand, Uzbekistan',
+            importantDates: 'Important dates',
+            importantDateOne: 'Acceptance of abstracts (abstracts) until August 25, 2022.',
+            importantDateTwo: 'Submission of the article until September 15, 2022.',
+            importantDateThree: 'Registration for the conference until September 25, 2022.',
+          },
         }
       }
     }
