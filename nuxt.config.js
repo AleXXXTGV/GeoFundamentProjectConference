@@ -117,6 +117,20 @@ export default {
             span1: 'Conference Coordinator: Yodgor Obidov',
             span2: 'Conference Secretary: Zohir Khasanov',
             span3: 'Photos venue download',
+          },
+          hotelsPage: {
+            hotel1: 'Hotel Asia Samarkand',
+          },
+          galleryPage: {
+            title: 'All photos well be uploaded after the Conference.',
+            item1: 'Samarkand',
+            item2: 'Bukhara',
+            item3: 'Shaxrisabz',
+            item4: 'Tashkent',
+          },
+          registerPage: {
+            title: 'All the files you need to download will be here.',
+            file1: 'How to get to Uzbekistan'
           }
         },
         ru: {
@@ -177,6 +191,20 @@ export default {
             span1: 'Координатро конференции: Ёдгор Обидов',
             span2: 'Секретарь конференции: Зохир Хасанов',
             span3: 'Фотографии место проведения скачивание',
+          },
+          hotelsPage: {
+            hotel1: 'Гостиница Азия Самарканд  ',
+          },
+          galleryPage: {
+            title: 'Все фотографии будут опубликованы после конференции',
+            item1: 'г.Самарканд',
+            item2: 'г.Бухара',
+            item3: 'г.Шахрисабз',
+            item4: 'г.Ташкент',
+          },
+          registerPage: {
+            title: 'Тут будет все необходимые  файлы для скачивание',
+            file1: 'Как добраться до Узбекистана'
           }
         },
         uz: {
@@ -236,6 +264,20 @@ export default {
             span1: 'Conference Coordinator: Yodgor Obidov',
             span2: 'Conference Secretary: Zohir Khasanov',
             span3: 'Photos venue download',
+          },
+          hotelsPage: {
+            hotel1: 'Hotel Asia Samarkand',
+          },
+          galleryPage: {
+            title: 'All photos well be uploaded after the Conference.',
+            item1: 'Samarkand',
+            item2: 'Bukhara',
+            item3: 'Shaxrisabz',
+            item4: 'Tashkent',
+          },
+          registerPage: {
+            title: 'All the files you need to download will be here.',
+            file1: 'How to get to Uzbekistan'
           }
         }
       }
