@@ -34,29 +34,29 @@
             "
           >
             <li class="text-center mt-8 flex justify-center">
-              <nuxt-link :to="localePath('/main')">{{ $t("headerLinks.main") }}</nuxt-link>
+              <nuxt-link :to="localePath('/main')" class="pageLink">{{ $t("headerLinks.main") }}</nuxt-link>
             </li>
 
             <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/about')">
+              <nuxt-link :to="localePath('/about')" class="pageLink">
                 {{ $t("headerLinks.about") }}
               </nuxt-link>
             </li>
 
             <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/venue')">
+              <nuxt-link :to="localePath('/venue')" class="pageLink">
                 {{ $t("headerLinks.venue") }}
               </nuxt-link>
             </li>
 
             <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/hotels')">
+              <nuxt-link :to="localePath('/hotels')" class="pageLink">
                 {{ $t("headerLinks.hotels") }}
               </nuxt-link>
             </li>
 
             <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/gallery')">
+              <nuxt-link :to="localePath('/gallery')" class="pageLink">
                 {{ $t("headerLinks.gallery") }}
               </nuxt-link>
             </li>
@@ -68,16 +68,15 @@
                 flex flex-wrap
                 text-80px
                 justify-center
-                mih-h-150px
+                min-h-[150px]
                 items-center
               "
             >
               <span class="text-[80px] w-1/2 font-medium flex justify-center">5-7</span>
-              <span class="text-[40px] w-1/2 flex">{{ $t("headerLinks.month") }}</span>
+              <span class="text-[40px] w-1/2 flex h-[20px]">{{ $t("headerLinks.month") }}</span>
             </li>
             <li class="flex justify-center">
               <span class="text-[40px]">2022</span>
-              
             </li>
           </ul>
         </div>
@@ -92,8 +91,11 @@ export default {};
 </script>
 
 <style>
-.mih-h-150px {
-  min-height: 150px;
+a.pageLink.nuxt-link-active {
+  border-bottom: 1px solid black;
+}
+.pageLink {
+  padding-bottom: 10px;
 }
 
 .addTransition {

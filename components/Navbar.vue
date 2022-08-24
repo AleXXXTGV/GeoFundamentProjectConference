@@ -13,7 +13,7 @@
             <span></span>
             <span></span>
           </div>
-          <span class="block text-3xl h-min font-semibold">V CACSMGE</span>
+          <nuxt-link :to="localePath('/')" class="block text-3xl h-min font-semibold">V CACSMGE</nuxt-link>
         </div>
       </div>
       <transition duration="550" name="nested">
@@ -46,12 +46,28 @@
                 "
               >
                 <li class="text-center mt-8 flex justify-center">
-                  <span>{{ $t("headerLinks.main") }}</span>
-                </li>
-                <li class="text-center mt-8">{{ $t("headerLinks.about") }}</li>
-                <li class="text-center mt-8">{{ $t("headerLinks.venue") }}</li>
-                <li class="text-center mt-8">{{ $t("headerLinks.hotels") }}</li>
-                <li class="text-center mt-8">{{ $t("headerLinks.gallery") }}</li>
+              <nuxt-link :to="localePath('/main')" class="pageLink">{{ $t("headerLinks.main") }}</nuxt-link>
+            </li>
+                <li class="text-center mt-8">
+              <nuxt-link :to="localePath('/about')" class="pageLink">
+                {{ $t("headerLinks.about") }}
+              </nuxt-link>
+            </li>
+                <li class="text-center mt-8">
+              <nuxt-link :to="localePath('/venue')" class="pageLink">
+                {{ $t("headerLinks.venue") }}
+              </nuxt-link>
+            </li>
+                <li class="text-center mt-8">
+              <nuxt-link :to="localePath('/hotels')" class="pageLink"> 
+                {{ $t("headerLinks.hotels") }}
+              </nuxt-link>
+            </li>
+                <li class="text-center mt-8">
+              <nuxt-link :to="localePath('/gallery')" class="pageLink">
+                {{ $t("headerLinks.gallery") }}
+              </nuxt-link>
+            </li>
                 <li
                   class="
                     text-center
@@ -59,31 +75,24 @@
                     flex flex-wrap
                     text-80px
                     justify-center
-                    mih-h-150px
+                    min-h-[50px]
                     items-center
                   "
                 >
-                  <span class="text-[80px] w-1/2 font-medium flex justify-end"
+                  <span class="text-[50px] xl:text-[80px] font-medium flex justify-end"
                     >5-7</span
                   >
-                  <span class="text-[40px] w-1/2 flex">{{
+                  <span class="text-[30px] xl:text-[40px] flex h-[20px]">{{
                     $t("headerLinks.month")
                   }}</span>
+                </li>
+                <li class="text-center mt-8 pb-[18px]">
                   <span class="text-[40px]">2022</span>
                 </li>
               </ul>
-              <button
-                class="
-                  signUpBtn
-                  text-white
-                  py-7
-                  w-full
-                  text-2xl
-                  font-semibold
-                "
-              >
-                {{ $t("headerLinks.register") }}
-              </button>
+              <nuxt-link :to="localePath('/register')" class="signUpBtn text-white py-7 w-full text-2xl font-semibold text-center">
+            {{ $t("headerLinks.register") }}
+          </nuxt-link>
           </div>
       </transition>
     </nav>
@@ -101,8 +110,11 @@ export default {
 </script>
 
 <style scoped>
-.mih-h-150px {
-  min-height: 150px;
+a.pageLink.nuxt-link-active {
+  border-bottom: 1px solid black;
+}
+.pageLink {
+  padding-bottom: 10px;
 }
 
 .addTransition {
