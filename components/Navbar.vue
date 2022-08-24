@@ -1,6 +1,6 @@
 <template>
-  <header class="addTransition w-full xl:max-w-[430px]">
-    <desktop-navbar class="hidden xl:flex navbarBG"/>
+  <header class="addTransition w-full xl:max-w-[430px] relative">
+    <desktop-navbar class="hidden xl:flex navbarBG fixed w-full"/>
     <nav class="addTransition flex flex-col justify-between xl:hidden fixed w-full navbarBG">
       <div class="navbarBG">
         <div class="container navbarBG flex justify-between items-center pt-[20px]">

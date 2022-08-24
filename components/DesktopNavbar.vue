@@ -6,7 +6,7 @@
           </div>
         </div>
         <div
-          class="navbarBG flex flex-col justify-between relative addTransition"
+          class="navbarBG flex flex-col justify-between relative addTransition xl:h-full xl:justify-center"
         >
           <div class="languages absolute">
             <div class="flex">
@@ -30,6 +30,7 @@
               justify-center
               text-2xl
               font-semibold
+              2xl:text-4xl
             "
           >
             <li class="text-center mt-8 flex justify-center">
@@ -71,15 +72,18 @@
                 items-center
               "
             >
-              <span class="text-[80px] w-1/2 font-medium flex justify-end">5-7</span>
+              <span class="text-[80px] w-1/2 font-medium flex justify-center">5-7</span>
               <span class="text-[40px] w-1/2 flex">{{ $t("headerLinks.month") }}</span>
+            </li>
+            <li class="flex justify-center">
               <span class="text-[40px]">2022</span>
+              
             </li>
           </ul>
+        </div>
           <nuxt-link :to="localePath('/register')" class="signUpBtn text-white py-7 w-full text-2xl font-semibold text-center">
             {{ $t("headerLinks.register") }}
           </nuxt-link>
-        </div>
     </div>
 </template>
 
