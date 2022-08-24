@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="container pt-[28px]">
+    <div class="bg-[#EBBB8C]">
+        <div class="container">
             <div class="mt-[15px]">
                 <span class="font-semibold 2xl:text-2xl">{{$t('aboutPage.listOneTitle')}}</span>
                 <ul class="font-medium list-disc list-inside pl-5 mt-[15px]">
