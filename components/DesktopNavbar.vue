@@ -75,7 +75,7 @@
               <span class="text-[80px] w-1/2 font-medium flex justify-center">5-7</span>
               <span class="text-[40px] w-1/2 flex h-[20px]">{{ $t("headerLinks.month") }}</span>
             </li>
-            <li class="flex justify-center">
+            <li class="flex justify-center pb-[12px]">
               <span class="text-[40px]">2022</span>
             </li>
           </ul>

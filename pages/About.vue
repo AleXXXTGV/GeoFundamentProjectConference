@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#EBBB8C] h-screen">
+    <div class="bg-[#EBBB8C] xl:h-auto">
         <div class="container pt-[28px] pb-[20px]">
             <div class="">
                 <span class="font-semibold 2xl:text-2xl">{{$t('aboutPage.listOneTitle')}}</span>
