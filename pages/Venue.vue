@@ -5,7 +5,6 @@
                 <span class="block mt-[20px]">{{ $t('venuePage.span1') }}</span>
                 <span class="block mt-[20px]">{{ $t('venuePage.span2') }}</span>
                 <a class="block mt-[20px]" href="mailto:conference.uzgs2022@gmail.com">conference.uzgs2022@gmail.com</a>
-                <span class="block mt-[20px]">{{ $t('venuePage.span3') }}</span>
             </div>
             <div class="mt-[20px]">
                 <a class="block mt-[20px]" href="tel:+998904526035">+99890 452 60 35</a>
