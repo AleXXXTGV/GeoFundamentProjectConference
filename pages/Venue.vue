@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#EBBB8C] pb-[45px] h-screen flex flex-col justify-center">
+    <div class="bg-[#EBBB8C] pb-[45px] flex flex-col justify-center h-auto xl:h-auto 2xl:h-screen">
         <div class="container flex flex-col justify-between pt-[45px] lg:flex-row">
             <div class="mt-[20px]">
                 <span class="block mt-[20px]">{{ $t('venuePage.span1') }}</span>

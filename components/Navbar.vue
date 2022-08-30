@@ -1,38 +1,46 @@
 <template>
   <header class="addTransition w-full xl:max-w-[430px] relative">
     <desktop-navbar class="hidden xl:flex navbarBG fixed w-full"/>
-    <nav class="addTransition flex flex-col justify-between xl:hidden fixed w-full navbarBG">
-      <div class="navbarBG">
-        <div class="container navbarBG flex justify-between items-center pt-[20px]">
-          <div
-            class="toggle xl:hidden flex z-30"
-            :class="{ active: showMobileMenu == true }"
-            @click="showMobileMenu = !showMobileMenu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <div class="navbarBG fixed w-full z-30 xl:hidden">
+      <div class="container navbarBG flex justify-between items-center pt-[20px] h-full">
+        <div
+          class="toggle xl:hidden flex"
+          :class="{ active: showMobileMenu == true }"
+          @click="showMobileMenu = !showMobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div @click="showMobileMenu = false">
           <nuxt-link :to="localePath('/')" class="block text-3xl h-min font-semibold">V CACSMGE</nuxt-link>
         </div>
       </div>
-      <transition duration="550" name="nested">
+    </div>
+    <transition duration="550" name="nested">
+        <nav v-show="showMobileMenu" class="addTransition navMenu flex flex-col justify-between fixed w-full pt-[90px] h-full">
           <div
             class="navbarBG flex flex-col justify-between relative h-full addTransition"
-            v-show="showMobileMenu"
+            
           >
             <div class="languages absolute">
               <div class="flex">
                 <img src="~/static/img/eng.svg" alt="langImg" />
-                <nuxt-link :to="switchLocalePath('en')" class="font-medium text-2xl">EN</nuxt-link>
+                <div @click="showMobileMenu = !showMobileMenu">
+                  <nuxt-link :to="switchLocalePath('en')" class="font-medium text-xl md:text-2xl">EN</nuxt-link>
+                </div>
               </div>
               <div class="flex">
                 <img src="~/static/img/ru.svg" alt="langImg" />
-                <nuxt-link :to="switchLocalePath('ru')" class="font-medium text-2xl">RU</nuxt-link>
+                <div @click="showMobileMenu = !showMobileMenu">
+                  <nuxt-link :to="switchLocalePath('ru')" class="font-medium text-xl md:text-2xl">RU</nuxt-link>
+                </div>
               </div>
               <div class="flex">
                 <img src="~/static/img/uz.svg" alt="langImg" />
-                <nuxt-link :to="switchLocalePath('uz')" class="font-medium text-2xl">UZ</nuxt-link>
+                <div @click="showMobileMenu = !showMobileMenu">
+                  <nuxt-link :to="switchLocalePath('uz')" class="font-medium text-xl md:text-2xl">UZ</nuxt-link>
+                </div>
               </div>
             </div>
               <ul
@@ -40,38 +48,49 @@
                   navbarBG
                   container
                   flex flex-col
-                  justify-center
-                  text-2xl
+                  justify-between
+                  text-xl
+                  md:text-2xl
                   font-semibold
+                  h-full
                 "
               >
-                <li class="text-center mt-8 flex justify-center">
-              <nuxt-link :to="localePath('/main')" class="pageLink">{{ $t("headerLinks.main") }}</nuxt-link>
+                <li class="text-center flex justify-center">
+                  <div @click="showMobileMenu = !showMobileMenu">
+                    <nuxt-link :to="localePath('/main')" class="pageLink">{{ $t("headerLinks.main") }}</nuxt-link>
+                  </div>
             </li>
-                <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/about')" class="pageLink">
-                {{ $t("headerLinks.about") }}
-              </nuxt-link>
+                <li class="text-center">
+                  <div @click="showMobileMenu = !showMobileMenu">
+                    <nuxt-link :to="localePath('/about')" class="pageLink">
+                      {{ $t("headerLinks.about") }}
+                    </nuxt-link>
+                  </div>
             </li>
-                <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/venue')" class="pageLink">
-                {{ $t("headerLinks.venue") }}
-              </nuxt-link>
+                <li class="text-center">
+                  <div @click="showMobileMenu = !showMobileMenu">
+                    <nuxt-link :to="localePath('/venue')" class="pageLink">
+                      {{ $t("headerLinks.venue") }}
+                    </nuxt-link>
+                  </div>
             </li>
-                <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/hotels')" class="pageLink"> 
-                {{ $t("headerLinks.hotels") }}
-              </nuxt-link>
+                <li class="text-center">
+                  <div @click="showMobileMenu = !showMobileMenu">
+                    <nuxt-link :to="localePath('/hotels')" class="pageLink"> 
+                      {{ $t("headerLinks.hotels") }}
+                    </nuxt-link>
+                  </div>
             </li>
-                <li class="text-center mt-8">
-              <nuxt-link :to="localePath('/gallery')" class="pageLink">
-                {{ $t("headerLinks.gallery") }}
-              </nuxt-link>
+                <li class="text-center">
+                  <div @click="showMobileMenu = !showMobileMenu">
+                    <nuxt-link :to="localePath('/gallery')" class="pageLink">
+                      {{ $t("headerLinks.gallery") }}
+                    </nuxt-link>
+                  </div>
             </li>
                 <li
                   class="
                     text-center
-                    mt-8
                     flex flex-wrap
                     text-80px
                     justify-center
@@ -86,16 +105,18 @@
                     $t("headerLinks.month")
                   }}</span>
                 </li>
-                <li class="text-center mt-8 pb-[18px]">
+                <li class="text-center pb-[18px]">
                   <span class="text-[40px]">2022</span>
                 </li>
               </ul>
-              <nuxt-link :to="localePath('/register')" class="signUpBtn text-white py-7 w-full text-2xl font-semibold text-center">
-            {{ $t("headerLinks.register") }}
-          </nuxt-link>
+              <div @click="showMobileMenu = !showMobileMenu" class="signUpBtn text-white py-7 w-full text-2xl font-semibold text-center">
+                <nuxt-link :to="localePath('/register')" >
+              {{ $t("headerLinks.register") }}
+            </nuxt-link>
+              </div>
           </div>
+        </nav>
       </transition>
-    </nav>
   </header>
 </template>
 

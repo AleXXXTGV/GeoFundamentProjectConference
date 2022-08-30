@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-[430px] flex flex-col justify-between h-full">
+    <div class="max-w-[430px] flex flex-col justify-between h-screen">
         <div class="">
           <div class="container navbarBG flex justify-center items-center pt-[20px]">
             <nuxt-link :to="localePath('/')" class="block text-3xl h-min font-semibold">V CACSMGE</nuxt-link>
@@ -27,35 +27,36 @@
               navbarBG
               container
               flex flex-col
-              justify-center
+              justify-around
+              h-full
               text-2xl
               font-semibold
               2xl:text-4xl
             "
           >
-            <li class="text-center mt-8 flex justify-center">
+            <li class="text-center flex justify-center">
               <nuxt-link :to="localePath('/main')" class="pageLink">{{ $t("headerLinks.main") }}</nuxt-link>
             </li>
 
-            <li class="text-center mt-8">
+            <li class="text-center">
               <nuxt-link :to="localePath('/about')" class="pageLink">
                 {{ $t("headerLinks.about") }}
               </nuxt-link>
             </li>
 
-            <li class="text-center mt-8">
+            <li class="text-center">
               <nuxt-link :to="localePath('/venue')" class="pageLink">
                 {{ $t("headerLinks.venue") }}
               </nuxt-link>
             </li>
 
-            <li class="text-center mt-8">
+            <li class="text-center">
               <nuxt-link :to="localePath('/hotels')" class="pageLink">
                 {{ $t("headerLinks.hotels") }}
               </nuxt-link>
             </li>
 
-            <li class="text-center mt-8">
+            <li class="text-center">
               <nuxt-link :to="localePath('/gallery')" class="pageLink">
                 {{ $t("headerLinks.gallery") }}
               </nuxt-link>
@@ -64,7 +65,6 @@
             <li
               class="
                 text-center
-                mt-8
                 flex flex-wrap
                 text-80px
                 justify-center

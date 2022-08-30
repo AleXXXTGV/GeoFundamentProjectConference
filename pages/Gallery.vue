@@ -2,7 +2,7 @@
     <div class="bg-[#EBBB8C] flex lg:h-screen">
         <div class="container pt-[40px] pb-[40px]">
             <span class="font-semibold">
-                Все фотографии будут опубликованы после конференции
+                {{$t('galleryPage.title')}}
             </span>
             <div class="pt-[40px]">
                 <div class="lg:flex lg:justify-between">

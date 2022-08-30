@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:flex xl:flex-col xl:justify-between">
+  <div class="xl:flex xl:flex-col xl:justify-between 2xl:h-screen">
     <div class="bg-[#EBBB8C] logo">
       <div class="container items-center pt-[15px] flex flex-col xl:flex-row xl:justify-between xl:py-[16px]">
         <h1 class="max-w-[552px] font-bold text-2xl text-[#663333] flex flex-col items-center text-center xl:flex-row xl:text-left xl:justify-between ">
