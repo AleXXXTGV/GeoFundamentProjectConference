@@ -133,6 +133,8 @@ export default {
             file3: 'Attachment to the invoice for payment',
             file4: 'Bulletin EN',
             file5: 'Bulletin RU',
+            file6: 'Full Paper Template',
+            file7: 'ABSTRACT Template',
           }
         },
         ru: {
@@ -209,6 +211,8 @@ export default {
             file3: 'Приложение к инвойсу для оплаты',
             file4: 'Бюллетень EN',
             file5: 'Бюллетень RU',
+            file6: 'Шаблон статьи',
+            file7: 'Шаблон абстракта',
           }
         },
         uz: {
@@ -274,6 +278,8 @@ export default {
             file3: `To'lov uchun schyot-fakturaga ilova`,
             file4: 'Ingliz xabarnomasi',
             file5: 'Rus xabarnomasi',
+            file6: 'Maqola namunasi',
+            file7: 'Abstrakt namunasi',
           }
         }
       }

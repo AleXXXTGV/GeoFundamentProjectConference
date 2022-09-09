@@ -8,6 +8,8 @@
                 <button @click="downloadMe3" class="w-max text-white">{{$t('registerPage.file3')}}</button>
                 <button @click="downloadMe4" class="w-max text-white">{{$t('registerPage.file4')}}</button>
                 <button @click="downloadMe5" class="w-max text-white">{{$t('registerPage.file5')}}</button>
+                <button @click="downloadMe6" class="w-max text-white">{{$t('registerPage.file6')}}</button>
+                <button @click="downloadMe7" class="w-max text-white">{{$t('registerPage.file7')}}</button>
             </div>
         </div>
     </div>
@@ -48,6 +50,20 @@ export default {
       const link = document.createElement('a')
       link.href = '/file5.pdf'
       link.download = 'file5.pdf'
+      link.target = '_blank'
+      link.click()
+    },
+        downloadMe6() {
+      const link = document.createElement('a')
+      link.href = '/file6.docx'
+      link.download = 'file6.docx'
+      link.target = '_blank'
+      link.click()
+    },
+        downloadMe7() {
+      const link = document.createElement('a')
+      link.href = '/file7.docx'
+      link.download = 'file7.docx'
       link.target = '_blank'
       link.click()
     },
